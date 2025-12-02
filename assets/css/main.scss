@@ -42,62 +42,14 @@
     "vendor/font-awesome/brands"
 ;
 
-/* === Force navigation menu to stay expanded and prevent collapsing === */
-.masthead__menu-toggle {
-  display: none !important;
-}
-
+/* === Custom: center the top navigation menu === */
 .masthead__menu {
-  display: flex !important;
   justify-content: center !important;
-  flex-grow: 1;
 }
 
-.masthead__inner-wrap {
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  flex-wrap: nowrap !important;
-}
-
-/* Prevent menu from collapsing into a dropdown */
-.greedy-nav .visible-links {
-  display: flex !important;
-}
-
-.greedy-nav .hidden-links {
-  display: none !important;
-}
-
-/* Add spacing between center menu items */
 .masthead__menu-item {
-  margin: 0 15px !important;
+  text-align: center;
 }
-
-/* Disable greedy-nav collapsing completely */
-
-/* Always hide the hamburger toggle */
-.greedy-nav__toggle,
-.masthead__menu-toggle {
-  display: none !important;
-}
-
-/* Prevent greedy-nav from hiding items */
-.greedy-nav .hidden-links {
-  display: none !important;
-}
-
-/* Force visible links to stay visible */
-.greedy-nav .visible-links {
-  display: flex !important;
-}
-
-/* Prevent JS from injecting width-based positioning */
-.greedy-nav {
-  overflow: visible !important;
-}
-
-/* Ensure items don't wrap */
-.greedy-nav .visible-links {
-  flex-wrap: nowrap !important;
+.masthead__menu-item {
+  margin: 0 15px;  /* 左右各 15px */
 }
