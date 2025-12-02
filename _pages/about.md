@@ -10,10 +10,7 @@ redirect_from:
 <!-- 内容容器 -->
 <div style="max-width: 900px; margin: 0 auto;">
 
-  <!-- 标题模块 -->
-  <div style="margin-bottom: 25px;">
-    <h1 style="margin-bottom: 10px;">Technical Art Demo Reel</h1>
-  </div>
+
 
   <!-- 描述模块 -->
   <div style="
@@ -40,11 +37,11 @@ redirect_from:
     border-radius: 10px;
     text-align: center;
   ">
-    <iframe width="100%" height="500"
-      src="https://www.youtube.com/embed/hE1vks8Y9-U"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
+    <iframe width="560" height="315"
+  src="https://www.youtube.com/embed/hE1vks8Y9-U"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen>
     </iframe>
   </div>
 
