@@ -42,34 +42,34 @@
     "vendor/font-awesome/brands"
 ;
 
-/* === Custom Nav Layout: Left Title + Center Menu === */
+/* === Force navigation menu to stay expanded and prevent collapsing === */
+.masthead__menu-toggle {
+  display: none !important;
+}
 
-/* 让 nav 使用 flex 布局 */
-.masthead .greedy-nav {
+.masthead__menu {
+  display: flex !important;
+  justify-content: center !important;
+  flex-grow: 1;
+}
+
+.masthead__inner-wrap {
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
+  flex-wrap: nowrap !important;
 }
 
-/* 左侧标题（logo 区域）保持左对齐 */
-.greedy-nav .site-title {
-  margin-right: auto !important;
-}
-
-/* 中间菜单部分水平居中 */
+/* Prevent menu from collapsing into a dropdown */
 .greedy-nav .visible-links {
   display: flex !important;
-  justify-content: center !important;
-  flex: 1 !important; /* 关键！让菜单撑开，从而实现居中 */
 }
 
-/* 每个菜单项 */
-.greedy-nav .visible-links li {
-  margin: 0 15px !important;
-  white-space: nowrap;
-}
-
-/* 不需要汉堡按钮 */
-.greedy-nav__toggle {
+.greedy-nav .hidden-links {
   display: none !important;
+}
+
+/* Add spacing between center menu items */
+.masthead__menu-item {
+  margin: 0 15px !important;
 }
