@@ -42,14 +42,29 @@
     "vendor/font-awesome/brands"
 ;
 
-/* === Custom: center the top navigation menu === */
-.masthead__menu {
+/* === Center navigation menu for AcademicPages === */
+
+/* 容器必须变成 flex 并居中 */
+.masthead nav {
+  display: flex !important;
   justify-content: center !important;
 }
 
-.masthead__menu-item {
-  text-align: center;
+/* 菜单项水平居中 */
+.greedy-nav .visible-links {
+  margin: 0 auto !important;
+  display: flex !important;
+  justify-content: center !important;
+  width: auto !important;
 }
-.masthead__menu-item {
-  margin: 0 15px;  /* 左右各 15px */
+
+/* 每个导航项本身居中 */
+.greedy-nav .visible-links li {
+  text-align: center !important;
+  margin: 0 15px !important;  /* 调整间距 */
+}
+
+/* 隐藏汉堡菜单，否则会挤布局 */
+.greedy-nav__toggle {
+  display: none !important;
 }
