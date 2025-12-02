@@ -73,3 +73,31 @@
 .masthead__menu-item {
   margin: 0 15px !important;
 }
+
+/* Disable greedy-nav collapsing completely */
+
+/* Always hide the hamburger toggle */
+.greedy-nav__toggle,
+.masthead__menu-toggle {
+  display: none !important;
+}
+
+/* Prevent greedy-nav from hiding items */
+.greedy-nav .hidden-links {
+  display: none !important;
+}
+
+/* Force visible links to stay visible */
+.greedy-nav .visible-links {
+  display: flex !important;
+}
+
+/* Prevent JS from injecting width-based positioning */
+.greedy-nav {
+  overflow: visible !important;
+}
+
+/* Ensure items don't wrap */
+.greedy-nav .visible-links {
+  flex-wrap: nowrap !important;
+}
