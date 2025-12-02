@@ -41,3 +41,15 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+/* === Custom: center the top navigation menu === */
+.masthead__menu {
+  justify-content: center !important;
+}
+
+.masthead__menu-item {
+  text-align: center;
+}
+.masthead__menu-item {
+  margin: 0 15px;  /* 左右各 15px */
+}
