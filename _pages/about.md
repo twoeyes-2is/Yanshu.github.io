@@ -36,37 +36,48 @@ redirect_from:
   </div>
 
 
-  <!-- 响应式视频模块（不会变形、不会变成细条） -->
+<!-- 视频模块：新增的视频在最上方 -->
+<div style="
+  background: rgba(255,255,255,0.08);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 35px;
+">
+
+  <!-- 新视频：保持 16:9，不变形 -->
   <div style="
-    background: rgba(255,255,255,0.08);
-    padding: 20px;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
     border-radius: 10px;
-    text-align: center;
+    margin-bottom: 30px;
   ">
+    <iframe 
+      src="https://www.youtube.com/embed/SP3zD77E9xs1"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+      style="position:absolute; top:0; left:0; width:100%; height:100%;"
+    ></iframe>
+  </div>
 
-    <!-- 关键：保持 16:9 比例的容器 -->
-    <div style="
-      position: relative;
-      padding-bottom: 56.25%; /* 16:9 */
-      height: 0;
-      overflow: hidden;
-      border-radius: 10px;
-    ">
-      <iframe 
-        src="https://www.youtube.com/embed/hE1vks8Y9-U"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-        style="
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-        ">
-      </iframe>
-    </div>
-
+  <!-- 原视频 -->
+  <div style="
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+  ">
+    <iframe 
+      src="https://www.youtube.com/embed/hE1vks8Y9-U"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+      style="position:absolute; top:0; left:0; width:100%; height:100%;"
+    ></iframe>
   </div>
 
 </div>
