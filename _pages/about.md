@@ -36,23 +36,21 @@ redirect_from:
   </div>
 
 
-<!-- 视频模块：新增的视频在最上方 -->
+<!-- 视频模块 1（新的第一个视频） -->
 <div style="
   background: rgba(255,255,255,0.08);
   padding: 20px;
   border-radius: 10px;
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 ">
 
-  <!-- 新视频：保持 16:9，不变形 -->
   <div style="
     position: relative;
-    padding-bottom: 56.25%;
+    padding-bottom: 56.25%; /* 16:9 */
     height: 0;
     overflow: hidden;
     border-radius: 10px;
-    margin-bottom: 30px;
   ">
     <iframe 
       src="https://www.youtube.com/embed/SP3zD77E9xs1"
@@ -63,10 +61,37 @@ redirect_from:
     ></iframe>
   </div>
 
-  <!-- 原视频 -->
+</div>
+
+
+<!-- 中间描述文字 -->
+<div style="
+  background: rgba(255,255,255,0.08);
+  padding: 20px 25px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  line-height: 1.65;
+">
+  <p>
+    "Beneath the Blue" is a 2D exploration-focused, rule-based horror puzzle game.
+    In the game, players collect clues and solve puzzles to gradually uncover the truth, 
+    identify the real rules of the exhibit hall, and ultimately escape the aquarium.
+  </p>
+</div>
+
+
+<!-- 视频模块 2（你的原视频） -->
+<div style="
+  background: rgba(255,255,255,0.08);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 30px;
+">
+
   <div style="
     position: relative;
-    padding-bottom: 56.25%;
+    padding-bottom: 56.25%; /* 16:9 */
     height: 0;
     overflow: hidden;
     border-radius: 10px;
