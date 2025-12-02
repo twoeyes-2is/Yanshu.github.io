@@ -42,29 +42,34 @@
     "vendor/font-awesome/brands"
 ;
 
-/* === Center navigation menu for AcademicPages === */
+/* === Custom Nav Layout: Left Title + Center Menu === */
 
-/* 容器必须变成 flex 并居中 */
-.masthead nav {
+/* 让 nav 使用 flex 布局 */
+.masthead .greedy-nav {
   display: flex !important;
-  justify-content: center !important;
+  justify-content: space-between !important;
+  align-items: center !important;
 }
 
-/* 菜单项水平居中 */
+/* 左侧标题（logo 区域）保持左对齐 */
+.greedy-nav .site-title {
+  margin-right: auto !important;
+}
+
+/* 中间菜单部分水平居中 */
 .greedy-nav .visible-links {
-  margin: 0 auto !important;
   display: flex !important;
   justify-content: center !important;
-  width: auto !important;
+  flex: 1 !important; /* 关键！让菜单撑开，从而实现居中 */
 }
 
-/* 每个导航项本身居中 */
+/* 每个菜单项 */
 .greedy-nav .visible-links li {
-  text-align: center !important;
-  margin: 0 15px !important;  /* 调整间距 */
+  margin: 0 15px !important;
+  white-space: nowrap;
 }
 
-/* 隐藏汉堡菜单，否则会挤布局 */
+/* 不需要汉堡按钮 */
 .greedy-nav__toggle {
   display: none !important;
 }
