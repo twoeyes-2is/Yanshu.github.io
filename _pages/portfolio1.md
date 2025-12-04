@@ -5,7 +5,4 @@ permalink: /portfolio1/
 author_profile: false
 ---
 
-<iframe src="/assets/files/portfolio1.pdf"
-        width="100%" height="900px"
-        style="border: none;">
-</iframe>
+<a href =" " width="100%" height="900px" style="border: none;"> </a >
