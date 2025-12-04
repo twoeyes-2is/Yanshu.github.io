@@ -7,6 +7,7 @@
 # server process.
 
 # Basic Site Settings
+theme                    : null
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
 remote_theme             : academicpages/academicpages.github.io
